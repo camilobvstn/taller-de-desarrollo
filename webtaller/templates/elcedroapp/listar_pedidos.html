@@ -28,6 +28,10 @@
                 <td>{{ pedido.2 }}</td>
                 <td>{{ pedido.3 }}</td>
                 <td>{{ pedido.4 }}</td>
+                <td>
+                    <a href="{% url 'actualizar-pedido' pedido.0 %}">Actualizar</a>
+                    <a href="{% url 'eliminar-pedido' pedido.0 %}" onclick="return confirm('¿Estás seguro de que quieres eliminar este pedido?');">Eliminar</a>
+                </td>
                 
             </tr>
             {% empty %}
@@ -38,6 +42,7 @@
         </tbody>
     </table>
     <a href="{% url 'registrar-pedido' %}" class="btn btn-primary">Registrar Nuevo Pedido</a>
+    <a href="{% url 'index' %}" class="btn btn-danger">Volver</a>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
