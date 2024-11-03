@@ -15,9 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from elcedroapp.views import index
+from elcedroapp.views import index,crear_pedido,listar_pedidos
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',index)
+    path('',index,name='index'),
+    path('registrar-pedido',crear_pedido,name='registrar-pedido'),
+    path('listar-pedidos/', listar_pedidos, name='listar-pedidos'),
 ]

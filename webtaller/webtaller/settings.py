@@ -79,10 +79,12 @@ import pymysql
 pymysql.install_as_MySQLdb()
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'elcedrobase',
-        'USER':'root',
-        'PASSWORD':''
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'base_taller',
+        'USER':'admin',
+        'PASSWORD':'elcedro.',
+        'HOST': 'elcedro.cb0acy6cisxf.us-east-1.rds.amazonaws.com',
+        'PORT': '3306',
     }
 }
 
