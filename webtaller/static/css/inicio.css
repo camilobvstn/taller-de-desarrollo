@@ -59,7 +59,7 @@ section {
     width: 40%;
     margin-left: 10px;
     margin-top: 50px;
-    z-index: 1; /* Asegura que el texto esté por encima de la imagen */
+    z-index: 1; 
 }
 
 #titulo-sec {
@@ -135,9 +135,9 @@ section {
 }
 #cont-info {
     display: flex;
-    justify-content: space-around; /* Espacia las tarjetas de manera uniforme */
-    flex-wrap: wrap; /* Permite que las tarjetas se ajusten en múltiples filas si el espacio es reducido */
-    gap: 20px; /* Espacio entre cada tarjeta */
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    gap: 20px; 
     padding-bottom: 20px;
     background-image: url('../img/fondoweb.png') ;
     background-size: cover;
